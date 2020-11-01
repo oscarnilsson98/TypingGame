@@ -1,0 +1,126 @@
+body {
+    max-width: 600px;
+    height: 100%;
+
+    margin: auto;
+
+    color: white;
+
+    /* change and take away / before img */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 70px;
+    column-gap: 2%;
+}
+
+header img {
+    height: 100%;
+    width: 100%;
+}
+
+header div{
+    display: flex;
+    align-items: flex-end;
+}
+
+header div label {
+    font-size: 2.5rem;
+}
+
+.settings-section {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    padding-top: .5rem;
+    padding-bottom: 0;
+    font-size: large;
+}
+
+.settings-section div {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 30% 30% 30%;
+    padding: 0.5rem;
+    font-size: large;
+}
+
+.settings-section select {
+    width: 200px;
+    height: 30px;
+}
+
+.settings-section label{
+    margin: 1rem;
+}
+
+.text-section {
+    font-size: larger;
+    font-weight: normal;
+    padding: .5rem;
+    padding-top: 0;
+}
+
+.text-section h1{
+    text-decoration: underline;
+}
+
+.text-section h1, h4{
+    text-align: center;
+}
+
+.input-section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 100%;
+}
+
+.input-section div {
+    display: flex;
+}
+
+.input-section input{
+    font-size: large;
+    vertical-align: middle;
+}
+
+.input-section button{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.canvas-section {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 200px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.canvas-section canvas {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: auto;
+    height: auto;
+    min-width: 300px;
+    min-height: 200px;
+}
+
+.canvas-section div {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    font-size: larger;
+    text-align: center;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+}

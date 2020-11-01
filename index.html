@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+Oscar Nilsson
+osni1801 
+osni1801@student.miun.se
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastTyping</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <img alt="logo" src="svg/typing.svg">
+        <div>
+            <label>FastTyping</label>
+        </div>
+    </header>
+
+    <main>
+        <section class="settings-section">
+            <select name="Texts" id="text-select"></select>
+            <label>
+                <input id="casing" type="checkbox" />
+                Ignore Casing
+            </label>
+            <label>
+                <input id="eng" type="checkbox" />
+                English
+            </label>
+            <label>
+                <input id="swe" type="checkbox" />
+                Swedish
+            </label>
+        </section>
+
+        <section class="text-section">
+            <h1 id="title">Title</h1>
+            <h4 id="author">author</h4>
+            <p id="texttotype" contenteditable><span style="background-color: #FFFF00">T</span>his is the text</p>
+        </section>
+
+        <section class="input-section">
+            <div></div>
+            <div>
+                <input type="text" id="input" placeholder="Press start to play  -->" >
+                <button id="start-stop"> <img style="height: 50px; width: 50px;" id="start-stop-img" alt="start/stop"
+                        src="img/start.png" /> </button>
+            </div>
+        </section>
+
+        <section class="canvas-section">
+            <div>
+                <label id="accuracy">100% accuracy</label>
+                <label id="errors">0 errors</label>
+            </div>
+            <canvas id="canvas"></canvas>
+            <div>
+                <label id="grosswpm">0 gross WPM</label>
+                <label id="netwpm">0 net WPM</label>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- take away hr look what is best practice old shit -->
+        <hr class="footerdivider" />
+        <p>Copyright © 2020 Oscar Nilsson. No rights reserved</p>
+        <a href="mailto:oscar.nilsson@protonmail.com">Contact me!</a>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
